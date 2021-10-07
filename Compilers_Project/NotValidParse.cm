@@ -1,0 +1,15 @@
+/**
+ * The following function is syntactically valid, but is not semantically valid
+ */
+int gimmeABreak ( int a )
+{
+	if ( a == 0 )
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+	return gimmeABreak ( a - 1 );
+}
